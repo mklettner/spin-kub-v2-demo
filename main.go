@@ -10,7 +10,7 @@ import (
 
 func index(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Handling %+v\n", r);
-	bs, err := ioutil.ReadFile("/content/index.html")
+	bs, err := ioutil.ReadFile("/go/src/spinnaker.io/demo/k8s-demo/content/index.html")
 
 	if err != nil {
 		fmt.Printf("Couldn't read index.html: %v", err);
