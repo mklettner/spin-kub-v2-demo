@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: spinnaker-demo
+  namespace: spinnaker
+spec:
+  hosts:
+  - "demo-d.ebcont.com"
+  gateways:
+  - helloworld-gateway
+  http:
+  - match:
+    route:
+    - destination:
+        host: spinnaker-demo
+        port:
+          number: 80
