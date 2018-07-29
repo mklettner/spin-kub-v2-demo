@@ -1,5 +1,5 @@
 FROM golang
-ENV COLOUR yellow
+ENV COLOUR grey
 
 ADD . /go/src/spinnaker.io/demo/k8s-demo
 
