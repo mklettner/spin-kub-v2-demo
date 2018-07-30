@@ -5,7 +5,7 @@ metadata:
   namespace: spinnaker
 spec:
   hosts:
-  - "demo-d.ebcont.com"
+  - "spinnaker-demo.q.ebcont.com"
   gateways:
   - helloworld-gateway
   http:
